@@ -1,0 +1,54 @@
+/*
+File: style.css
+Author: Gyüre Árpád
+Copyright: 2023, Gyüre Árpád
+Group: Szoft I-1-E
+Date: 2023-02-10
+Github: https://github.com/rp2022k/webdoga3
+Licenc: GNU GPL
+*/
+
+body{
+    background-color: antiquewhite;
+}
+.bal{
+    width: 100%;
+    height: 100px;
+    background-color: aquamarine;
+}
+#footer {
+    background-color: rgb(190, 45, 45);
+    color: aliceblue;
+}
+#calcButton{
+    width: 100px;
+    margin-left: 18px;
+}
+
+.floating-label-group {
+    position: relative;
+    margin-top: 15px;
+    margin-bottom: 25px;
+}
+
+.floating-label {
+    position: absolute;
+    pointer-events: none;
+    font-size: 16px;
+    top: 5px;
+    left: 18px;
+    transition: 0.2s;
+    opacity: .5;
+}
+
+input:focus ~.floating-label,
+input:not(:focus):valid ~.floating-label {
+    font-size: 12px;
+    top: -20px;
+    left: 18px;
+    opacity: 1;
+}
+
+.row {
+    margin-top: 20px;
+}
